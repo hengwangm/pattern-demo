@@ -18,10 +18,3 @@ function bubblingSort(arr) {
 }
 const arr = [3, 4, 5, 4, 9, 4, 6, 7];
 bubblingSort(arr)
-
-
-/**
- * 快速排序
- * 分而治之，
- * 去一个中间点，小于的左边往左边房，大于的放右边
- */
