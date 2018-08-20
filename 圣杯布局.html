@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="page">
+        <div id="hd">hd</div>
+        <div id="bd" class="clearfix">
+            <div class="main">main</div>
+            <div class="sub">sub</div>
+            <div class="extra">extra</div>
+        </div>
+    </div>
+</body>
+
+</html>
+<style>
+    body {
+        margin: 0;
+        padding: 0
+    }
+
+    #bd {
+        padding: 0 230px 0 190px;
+    }
+
+    .main {
+        float: left;
+        width: 100%;
+        background-color: red;
+        min-height: 100px;
+    }
+
+    .sub {
+        float: left;
+        width: 190px;
+        margin-left: -100%;
+        position: relative;
+        left: -190px;
+    }
+
+    .extra {
+        float: left;
+        width: 230px;
+        margin-left: -230px;
+        position: relative;
+        right: -230px;
+    }
+
+
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .clearfix:before {
+        content: "";
+        display: table;
+    }
+</style>

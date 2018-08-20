@@ -15,9 +15,40 @@ function once(fn){
 }
 
 //函数防抖动
-function debounce(fn){
-    
+/**
+ * 例如angular的ngmodel有个debounce属性，就是用户输入后停止一段时间
+ * 才开始计算这个值，防止这个input的值一直抖动，影响性能.
+ * 如果一直输入不停，那么该函数不会被执行。
+ */
+function debounce(fn,ms){
+    var timer;
+    return function(){
+        var self = this,args = arguments;
+        clearTimeout(timer);
+        timer = setTimeout(function(){
+            fn.apply(self,args);
+        },ms)
+    }
 }
+
+
+
+//节流
+/**
+ * 每隔ms至少会执行一次
+ */
+function throttle(fn,ms){
+    var startTime = new Data();
+    return function(){
+        var self = this,args = arguments;
+        curTime  = new Data();
+        if(curTime - startTime >= ms){
+            fn.apply(self,args);
+            startTime = curTime;
+        }
+    }
+}
+
 
 document.onclick = once(function(e){
     console.log(e);

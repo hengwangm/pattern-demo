@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="app.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="modal-over bg-login">
+        <!--  <div class="panel wrapper-md center-block login-width" style=" background-color: #222c38;margin-top: 180px;padding: 28px 80px;">
+            <form name="form" class="form-validation">
+                <h4 class="text-center m-t-none m-b title-gradient">湖北西沟湖生态农业有限责任公司生产管理系统</h3> 
+                <div class="list-group list-group-sm">
+                    <div class="list-group-item m-b bg-light dk no-border" style="margin-bottom: 35px;border-radius: 5px">
+                        <input type="text" placeholder="{{'user.ACCOUNT' | translate}}"
+                               class="form-control no-border no-bg" ng-model="user.username" required style="border-radius: 5px;">
+                    </div>
+                    <div class="list-group-item m-b bg-light dk no-border " style="border-radius: 5px">
+                        <input type="password" placeholder="{{'common.PASSWORD' | translate}}" 
+                               class="form-control no-border no-bg" ng-model="user.password" required>
+                    </div>
+                </div>
+                <div class="text-danger  text-center" ng-show="authError">
+                    {{authError}}
+                </div>
+                <div class="row" style="margin-top:-15px;font-size: 16px;color: #8c8787;">
+                    <div class="col-md-12">
+    
+                        <div class="checkbox">
+                            <label class="i-checks">
+                                <input type="checkbox" ng-change="vm.changeRememberMe()" ng-model="vm.rememberMe" style="border-radius: 5px;">
+                                <i></i>
+                                记住账号
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                     <div class="col-md-12">
+                       <button type="submit" class="btn btn-lg btn-block btn-login" ng-click="login()"
+                             style="box-shadow: -0.5px -0.5px 0.5px 1px #06efcc, -1px -1px 3px 2px RGBA(1,1,0,0.3);
+                                    -moz-box-shadow:-0.5px -0.5px 0.5px 1px #06efcc, -1px -1px 3px 2px RGBA(1,1,0,0.3);
+                                     -webkit-box-shadow:-0.5px -0.5px 0.5px 1px #06efcc, -1px -1px 3px 2px RGBA(1,1,0,0.3);"
+                               ng-disabled='form.$invalid' translate="common.LOGIN">Log in</button>
+                   </div>
+                </div>
+            </form>
+        </div> -->
+        <div class="box">
+            <header class="box-header text-right">
+                <img src="004.png" alt="" class="box-header-img">
+                <div>湖北西沟湖生态农业有限责任公司</div>
+                <div>生产管理系统</div>
+            </header>
+            <div class="m-b">
+                <div class="input-group m-b">
+                    <span class="input-group-addon">用户名</span>
+                    <input type="text" class="form-control input-lg">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" >密 &nbsp&nbsp码</span>
+                    <input type="text" class="form-control input-lg">
+                </div>
+            </div>
+            <div class="text-danger  text-center" ng-show="authError">
+                {{authError}}
+            </div>
+            <div class="row" style="margin-top:-15px;font-size: 15px;color: #66665C">
+                <div class="col-md-12">
+
+                    <div class="checkbox">
+                        <label class="i-checks" style="font-weight: bold">
+                            <input type="checkbox" ng-change="vm.changeRememberMe()" ng-model="vm.rememberMe" style="border-radius: 5px;">
+                            <i></i>
+                            记住账号
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-t">
+                <div class="col-md-12">
+                    <button type="submit" class="btn btn-lg btn-block btn-login" ng-click="login()"
+                        ng-disabled='form.$invalid' translate="common.LOGIN">登&nbsp&nbsp录</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<style>
+    .box {
+        background-image: url(005.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        min-height: 500px;
+        width: 700px;
+        position: absolute;
+        top: 45%;
+        transform: translateY(-50%);
+        right: 100px;
+        padding: 57px 205px 57px 180px;
+        color: #0D6835;
+        font-weight: bold;
+    }
+
+    .box-header {
+        margin: 30px 0 60px 0;
+        font-size: 16px;
+    }
+
+    .box-header-img {
+        width: 42px;
+        float: left;
+    }
+
+    .bg-login .input-group-addon {
+        background-color: #086431;
+        border-color: #086431;
+        color: #fff;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+
+    .bg-login input {
+        border: 2px solid #086431;
+        border-radius: 10px;
+    }
+
+    .bg-login .input-group{
+        background: #086431;
+        border-radius: 10px;
+    }
+    .bg-login .btn-login{
+        background: #086431;
+        border-radius: 10px;
+        font-weight: bolder;
+    }
+    @media (max-width:768px){
+        .box{
+            transform: translate(-50%,-50%);
+            left: 55%;
+        }
+    }
+</style>
