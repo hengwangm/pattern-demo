@@ -1,5 +1,5 @@
 //1.实现一个双向链表
-
+//6666
 class Node{
     constructor(data){
         this.data  = data;
