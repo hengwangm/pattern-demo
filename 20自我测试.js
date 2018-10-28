@@ -2,6 +2,7 @@
 //6666
 ///98989989
 //899999999
+///666
 class Node{
     constructor(data){
         this.data  = data;
