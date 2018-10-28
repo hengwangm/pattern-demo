@@ -1,4 +1,4 @@
-//1.实现一个双向链表
+//1.实现一个双向链表545455
 class Node{
     constructor(data){
         this.data  = data;
