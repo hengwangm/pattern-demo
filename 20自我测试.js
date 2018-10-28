@@ -3,6 +3,7 @@
 ///98989989
 //899999999
 ///666
+／／544545
 class Node{
     constructor(data){
         this.data  = data;
