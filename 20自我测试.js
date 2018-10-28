@@ -1,6 +1,6 @@
 //1.实现一个双向链表
 //6666sas
-//7777时
+//888
 class Node{
     constructor(data){
         this.data  = data;
