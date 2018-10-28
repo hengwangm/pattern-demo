@@ -1,5 +1,5 @@
 //1.实现一个双向链表
-//6666
+//6666sas
 //7777时
 class Node{
     constructor(data){
